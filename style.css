@@ -1,0 +1,352 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f5f7fa;
+    color: #202124;
+    font-size: 16px;
+    min-height: 100vh;
+    line-height: 1.6;
+}
+
+/* Header */
+#instituteDetails {
+    background: linear-gradient(135deg, #6a1b9a, #8e24aa);
+    color: #ffffff;
+    padding: 60px 30px;
+    text-align: center;
+    border-bottom: none;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 0 0 24px 24px;
+    position: relative;
+    overflow: hidden;
+}
+#instituteDetails::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -50px;
+    width: 200px;
+    height: 200px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 50%;
+    transform: rotate(45deg);
+}
+#instituteDetails h1 {
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    letter-spacing: 1.2px;
+    line-height: 1.3;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+#instituteDetails h2 {
+    font-size: 28px;
+    font-weight: 500;
+    margin-bottom: 16px;
+    letter-spacing: 0.8px;
+    opacity: 0.95;
+}
+#instituteDetails p {
+    font-size: 18px;
+    opacity: 0.95;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.8;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 0 10px;
+}
+
+/* Form Container */
+#studentFormContainer {
+    background-color: #ffffff;
+    max-width: 640px;
+    margin: 60px auto;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+    transition: all 0.3s ease-in-out;
+}
+#studentFormContainer h2 {
+    font-size: 24px;
+    color: #6a1b9a;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+/* Form Inputs */
+#studentForm label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #333;
+}
+#studentForm input {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid #ccd1d9;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    background-color: #fefefe;
+}
+#studentForm input:focus {
+    border-color: #6a1b9a;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(106, 27, 154, 0.15);
+}
+
+/* Quiz & Results Containers */
+#quizContainer, #resultContainer {
+    background-color: #ffffff;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+}
+#quizContainer h2, #resultContainer h2 {
+    font-size: 26px;
+    color: #6a1b9a;
+    margin-bottom: 30px;
+    font-weight: 700;
+    text-align: center;
+}
+
+/* Timer */
+#timer {
+    font-size: 20px;
+    background-color: #ffebee;
+    color: #c62828;
+    padding: 10px 16px;
+    border-radius: 8px;
+    display: inline-block;
+    margin: 0 auto 24px;
+    text-align: center;
+    font-weight: 600;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* Question */
+.question {
+    background-color: #ffffff;
+    padding: 28px;
+    border: 1px solid #e0e0e0;
+    border-left: 6px solid #6a1b9a;
+    border-radius: 12px;
+    margin-bottom: 30px;
+    transition: all 0.3s;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+.question p {
+    font-weight: 600;
+    font-size: 18px;
+    color: #212121;
+    margin-bottom: 18px;
+}
+
+/* Options */
+.options label {
+    display: block;
+    padding: 16px 18px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin-bottom: 16px;
+    cursor: pointer;
+    background-color: #f8f9fa;
+    transition: all 0.25s ease-in-out;
+    font-size: 16px;
+    font-weight: 500;
+}
+.options label:hover {
+    background-color: #e8eaf6;
+    border-color: #9e9e9e;
+}
+.options input[type="radio"] {
+    margin-right: 12px;
+    accent-color: #6a1b9a;
+    transform: scale(1.2);
+}
+
+/* Buttons */
+#quizForm {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+#quizForm #submit {
+    align-self: center;
+    width: 200px;
+    margin-top: 20px;
+}
+button {
+    background: linear-gradient(135deg, #6a1b9a, #8e24aa);
+    color: #ffffff;
+    padding: 14px;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+    width: 100%;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    margin-top: 20px;
+    box-shadow: 0 4px 12px rgba(106, 27, 154, 0.3);
+}
+button:hover {
+    background: linear-gradient(135deg, #5e35b1, #7b1fa2);
+}
+
+/* Result Text */
+#resultText {
+    font-size: 24px;
+    font-weight: 700;
+    color: #43a047;
+    margin-top: 28px;
+    padding: 20px;
+    background-color: #e8f5e9;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+#questionNavigator {
+    position: fixed;
+    top: 80px; /* Adjusted slightly */
+    right: 20px;
+    width: 280px; /* Increased width to accommodate more columns */
+    max-height: 80vh; /* Limit height and allow scrolling */
+    background-color: #fdfcfe;
+    border: 2px solid #4a148c;
+    border-radius: 12px;
+    padding: 15px; /* Slightly reduced padding */
+    z-index: 1000;
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.25);
+    display: none; /* Initially hidden */
+    transition: all 0.3s ease;
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack elements vertically */
+}
+
+#questionNavigator h3 {
+    font-size: 16px; /* Slightly smaller */
+    font-weight: 700;
+    color: #4a148c;
+    margin-bottom: 12px; /* Reduced margin */
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    flex-shrink: 0; /* Prevent title from shrinking */
+}
+
+#navButtons {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* Changed to 5 columns */
+    gap: 8px; /* Slightly reduced gap */
+    overflow-y: auto; /* Enable vertical scrolling for buttons */
+    flex-grow: 1; /* Allow button container to fill available space */
+    padding-right: 5px; /* Add slight padding for scrollbar */
+}
+
+/* Style the scrollbar for Webkit browsers */
+#navButtons::-webkit-scrollbar {
+    width: 6px;
+}
+#navButtons::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+#navButtons::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 10px;
+}
+#navButtons::-webkit-scrollbar-thumb:hover {
+    background: #aaa;
+}
+
+
+#navButtons button {
+    padding: 6px 0; /* Adjusted padding */
+    font-size: 13px; /* Slightly smaller font */
+    border: 1px solid #4a148c; /* Slightly thinner border */
+    border-radius: 6px; /* Slightly smaller radius */
+    background-color: #ffffff;
+    color: #4a148c;
+    font-weight: 600; /* Adjusted font weight */
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    text-align: center;
+    min-width: 30px; /* Ensure minimum width */
+    line-height: 1.4; /* Adjust line height */
+}
+
+#navButtons button:hover {
+    background-color: #ede7f6;
+    color: #4a148c;
+}
+
+#navButtons button.active {
+    background-color: #4a148c !important;
+    color: #ffffff !important;
+    border-color: #4a148c;
+    font-weight: 700;
+}
+
+#navButtons button.answered {
+    background-color: #c8e6c9;
+    border-color: #388e3c;
+    color: #1b5e20;
+    font-weight: 600;
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+    #studentFormContainer, #quizContainer, #resultContainer {
+        padding: 20px;
+    }
+    #instituteDetails h1 {
+        font-size: 32px;
+    }
+    #instituteDetails h2 {
+        font-size: 22px;
+    }
+    #instituteDetails p {
+        font-size: 16px;
+    }
+    button {
+        font-size: 15px;
+    }
+    .question {
+        padding: 20px;
+    }
+    .options label {
+        padding: 12px 14px;
+        font-size: 15px;
+    }
+    #questionNavigator {
+        display: none !important;
+    }
+}
+
+/* Print View */
+@media print {
+    body {
+        background: #fff;
+        color: #000;
+    }
+    button, #timer {
+        display: none;
+    }
+    #studentFormContainer, #quizContainer, #resultContainer {
+        box-shadow: none;
+        border: 1px solid #000;
+    }
+}

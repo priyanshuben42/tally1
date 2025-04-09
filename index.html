@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fundamentals of IT Quiz</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header id="instituteDetails">
+    <h1>Sensorstech Computer Institute</h1>
+    <h2>Generaltest-2</h2>
+    <p><strong>Founder:</strong> Anand Kumar Sharma</p>
+    <p><strong>Teacher:</strong> Priyanshu Ben</p>
+    <p><strong>Address:</strong> Beside Scholar's Valley School, Newada, BLW RD.</p>
+  </header>
+
+  <main style="display: flex; flex-direction: row; justify-content: center; gap: 20px; position: relative;">
+    <div style="flex: 1; max-width: 800px;">
+      <section id="studentFormContainer">
+        <h2>Enter Student Details</h2>
+        <form id="studentForm" novalidate>
+          <label for="studentName">Name:</label>
+          <input type="text" id="studentName" name="studentName" required />
+
+          <label for="studentEmail">Email:</label>
+          <input type="email" id="studentEmail" name="studentEmail" required />
+
+          <button type="submit">Start Quiz</button>
+        </form>
+      </section>
+
+      <section id="quizContainer" hidden>
+        <h2>Fundamentals of IT Quiz</h2>
+        <div id="timer">Time Left: 60:00</div>
+        <form id="quizForm">
+
+          <div id="questionsPlaceholder">
+            
+            <div class="question">
+              <p>1. What is a record of all the transactions?</p>
+              <div class="options">
+                <label><input type="radio" name="q1" value="A" /> A) Journal</label>
+                <label><input type="radio" name="q1" value="B" /> B) Ledger</label>
+                <label><input type="radio" name="q1" value="C" /> C) Invoice</label>
+                <label><input type="radio" name="q1" value="D" /> D) Voucher</label>
+              </div>
+            </div>
+
+            <div class="question">
+              <p>2. In which system are all business transactions recorded with at least two accounts?</p>
+              <div class="options">
+                <label><input type="radio" name="q2" value="A" /> A) Single Entry System</label>
+                <label><input type="radio" name="q2" value="B" /> B) Manual System</label>
+                <label><input type="radio" name="q2" value="C" /> C) Double Entry System</label>
+                <label><input type="radio" name="q2" value="D" /> D) Ledger System</label>
+              </div>
+            </div>
+
+            <div class="question">
+              <p>3. What is putting money into an asset or a business with the expectation of earning profits in future?</p>
+              <div class="options">
+                <label><input type="radio" name="q3" value="A" /> A) Expenditure</label>
+                <label><input type="radio" name="q3" value="B" /> B) Expense</label>
+                <label><input type="radio" name="q3" value="C" /> C) Investment</label>
+                <label><input type="radio" name="q3" value="D" /> D) Loss</label>
+              </div>
+            </div>
+
+            <div class="question">
+              <p>4. Purchasing goods from Naman on credit, Naman is a:</p>
+              <div class="options">
+                <label><input type="radio" name="q4" value="A" /> A) Debtor</label>
+                <label><input type="radio" name="q4" value="B" /> B) Creditor</label>
+                <label><input type="radio" name="q4" value="C" /> C) Owner</label>
+                <label><input type="radio" name="q4" value="D" /> D) Manager</label>
+              </div>
+            </div>
+
+            <div class="question">
+              <p>5. Which of the following are assets that cannot be seen or touched?</p>
+              <div class="options">
+                <label><input type="radio" name="q5" value="A" /> A) Fixed Assets</label>
+                <label><input type="radio" name="q5" value="B" /> B) Current Assets</label>
+                <label><input type="radio" name="q5" value="C" /> C) Intangible Assets</label>
+                <label><input type="radio" name="q5" value="D" /> D) Tangible Assets</label>
+              </div>
+            </div>
+
+            <div class="question">
+              <p>6. Drawings is a type of:</p>
+              <div class="options">
+                <label><input type="radio" name="q6" value="A" /> A) Real Account</label>
+                <label><input type="radio" name="q6" value="B" /> B) Nominal Account</label>
+                <label><input type="radio" name="q6" value="C" /> C) Personal Account</label>
+                <label><input type="radio" name="q6" value="D" /> D) Capital Account</label>
+              </div>
+            </div>
+
+            <div class="question">
+              <p>7. Only one account is used to record a transaction in the double entry system.</p>
+              <div class="options">
+                <label><input type="radio" name="q7" value="A" /> A) True</label>
+                <label><input type="radio" name="q7" value="B" /> B) False</label>
+                <label><input type="radio" name="q7" value="C" /> C) Sometimes True</label>
+                <label><input type="radio" name="q7" value="D" /> D) Cannot Say</label>
+              </div>
+            </div>
+
+            <div class="question">
+              <p>8. Capital is an investment.</p>
+              <div class="options">
+                <label><input type="radio" name="q8" value="A" /> A) True</label>
+                <label><input type="radio" name="q8" value="B" /> B) False</label>
+                <label><input type="radio" name="q8" value="C" /> C) Depends on condition</label>
+                <label><input type="radio" name="q8" value="D" /> D) Cannot be determined</label>
+              </div>
+            </div>
+
+            <div class="question">
+              <p>9. Tally Prime is a:</p>
+              <div class="options">
+                <label><input type="radio" name="q9" value="A" /> A) Graphic Designing Software</label>
+                <label><input type="radio" name="q9" value="B" /> B) Accounting Software</label>
+                <label><input type="radio" name="q9" value="C" /> C) Video Editing Software</label>
+                <label><input type="radio" name="q9" value="D" /> D) Antivirus</label>
+              </div>
+            </div>
+
+            <div class="question">
+              <p>10. Natural account refers to an:</p>
+              <div class="options">
+                <label><input type="radio" name="q10" value="A" /> A) Individual</label>
+                <label><input type="radio" name="q10" value="B" /> B) Artificial Person</label>
+                <label><input type="radio" name="q10" value="C" /> C) Natures Resource</label>
+                <label><input type="radio" name="q10" value="D" /> D) Real Account</label>
+              </div>
+            </div>
+
+            <div class="question">
+              <p>11. Nature of purchase is:</p>
+              <div class="options">
+                <label><input type="radio" name="q11" value="A" /> A) Income</label>
+                <label><input type="radio" name="q11" value="B" /> B) Expense</label>
+                <label><input type="radio" name="q11" value="C" /> C) Liability</label>
+                <label><input type="radio" name="q11" value="D" /> D) Asset</label>
+              </div>
+            </div>
+
+            <div class="question">
+              <p>12. Goodwill is not an asset.</p>
+              <div class="options">
+                <label><input type="radio" name="q12" value="A" /> A) True</label>
+                <label><input type="radio" name="q12" value="B" /> B) False</label>
+                <label><input type="radio" name="q12" value="C" /> C) Sometimes</label>
+                <label><input type="radio" name="q12" value="D" /> D) Cannot determine</label>
+              </div>
+            </div>
+
+            <div class="question">
+              <p>13. Goods sold to Prakash Steels for cash 12,000. Which accounts are affected?</p>
+              <div class="options">
+                <label><input type="radio" name="q13" value="A" /> A) Prakash A/c and Cash A/c</label>
+                <label><input type="radio" name="q13" value="B" /> B) Sales A/c and Cash A/c</label>
+                <label><input type="radio" name="q13" value="C" /> C) Purchase A/c and Cash A/c</label>
+                <label><input type="radio" name="q13" value="D" /> D) None of the above</label>
+              </div>
+            </div>
+
+            <div class="question">
+              <p>14. 2,600 spent to repair an old machine. Which is correct?</p>
+              <div class="options">
+                <label><input type="radio" name="q14" value="A" /> A) Repair A/c will be debited</label>
+                <label><input type="radio" name="q14" value="B" /> B) Repair A/c will be credited</label>
+                <label><input type="radio" name="q14" value="C" /> C) Machinery A/c will be debited</label>
+                <label><input type="radio" name="q14" value="D" /> D) Expense A/c will be credited</label>
+              </div>
+            </div>
+
+            <div class="question">
+              <p>15. The word jour refers to:</p>
+              <div class="options">
+                <label><input type="radio" name="q15" value="A" /> A) Daily transactions</label>
+                <label><input type="radio" name="q15" value="B" /> B) All records</label>
+                <label><input type="radio" name="q15" value="C" /> C) Daily records</label>
+                <label><input type="radio" name="q15" value="D" /> D) Credit journal</label>
+              </div>
+            </div>
+
+            <div class="question">
+              <p>16. Goods purchased for 27,000 and sold for 43,000. What is the income?</p>
+              <div class="options">
+                <label><input type="radio" name="q16" value="A" /> A) 43,000</label>
+                <label><input type="radio" name="q16" value="B" /> B) 13,000</label>
+                <label><input type="radio" name="q16" value="C" /> C) 16,000</label>
+                <label><input type="radio" name="q16" value="D" /> D) None of the above</label>
+              </div>
+            </div>
+
+            <div class="question">
+              <p>17. Which account can be both debited and credited?</p>
+              <div class="options">
+                <label><input type="radio" name="q17" value="A" /> A) Purchase A/c</label>
+                <label><input type="radio" name="q17" value="B" /> B) Salary Paid A/c</label>
+                <label><input type="radio" name="q17" value="C" /> C) Machinery A/c</label>
+                <label><input type="radio" name="q17" value="D" /> D) None of the above</label>
+              </div>
+            </div>
+
+            <div class="question">
+              <p>18. Loan to Lucky is which type of account?</p>
+              <div class="options">
+                <label><input type="radio" name="q18" value="A" /> A) Real</label>
+                <label><input type="radio" name="q18" value="B" /> B) Nominal</label>
+                <label><input type="radio" name="q18" value="C" /> C) Personal</label>
+                <label><input type="radio" name="q18" value="D" /> D) Expense</label>
+              </div>
+            </div>
+
+            <div class="question">
+              <p>19. Goodwill is which type of account?</p>
+              <div class="options">
+                <label><input type="radio" name="q19" value="A" /> A) Personal</label>
+                <label><input type="radio" name="q19" value="B" /> B) Real</label>
+                <label><input type="radio" name="q19" value="C" /> C) Nominal</label>
+                <label><input type="radio" name="q19" value="D" /> D) Capital</label>
+              </div>
+            </div>
+
+            <div class="question">
+              <p>20. Sales account is a:</p>
+              <div class="options">
+                <label><input type="radio" name="q20" value="A" /> A) Nominal Account</label>
+                <label><input type="radio" name="q20" value="B" /> B) Real Account</label>
+                <label><input type="radio" name="q20" value="C" /> C) Personal Account</label>
+                <label><input type="radio" name="q20" value="D" /> D) Asset Account</label>
+              </div>
+            </div>
+
+            <div class="question">
+              <p>21. Leasehold property is classified as:</p>
+              <div class="options">
+                <label><input type="radio" name="q21" value="A" /> A) Nominal</label>
+                <label><input type="radio" name="q21" value="B" /> B) Real</label>
+                <label><input type="radio" name="q21" value="C" /> C) Personal</label>
+                <label><input type="radio" name="q21" value="D" /> D) Capital</label>
+              </div>
+            </div>
+
+            <div class="question">
+              <p>22. Discount Allowed is a:</p>
+              <div class="options">
+                <label><input type="radio" name="q22" value="A" /> A) Real Account</label>
+                <label><input type="radio" name="q22" value="B" /> B) Nominal Account</label>
+                <label><input type="radio" name="q22" value="C" /> C) Personal Account</label>
+                <label><input type="radio" name="q22" value="D" /> D) Expense Account</label>
+              </div>
+            </div>
+
+            <div class="question">
+              <p>23. Carriage is a type of:</p>
+              <div class="options">
+                <label><input type="radio" name="q23" value="A" /> A) Real Account</label>
+                <label><input type="radio" name="q23" value="B" /> B) Nominal Account</label>
+                <label><input type="radio" name="q23" value="C" /> C) Personal Account</label>
+                <label><input type="radio" name="q23" value="D" /> D) Liability</label>
+              </div>
+            </div>
+
+            <div class="question">
+              <p>24. Copyright is a:</p>
+              <div class="options">
+                <label><input type="radio" name="q24" value="A" /> A) Real Account</label>
+                <label><input type="radio" name="q24" value="B" /> B) Nominal Account</label>
+                <label><input type="radio" name="q24" value="C" /> C) Personal Account</label>
+                <label><input type="radio" name="q24" value="D" /> D) Current Liability</label>
+              </div>
+            </div>
+
+            <div class="question">
+              <p>25. Trademark is classified as:</p>
+              <div class="options">
+                <label><input type="radio" name="q25" value="A" /> A) Tangible Asset</label>
+                <label><input type="radio" name="q25" value="B" /> B) Personal Account</label>
+                <label><input type="radio" name="q25" value="C" /> C) Intangible Asset</label>
+                <label><input type="radio" name="q25" value="D" /> D) Current Asset</label>
+              </div>
+            </div>
+
+            <div class="question">
+              <p>26. Investment is what type of account?</p>
+              <div class="options">
+                <label><input type="radio" name="q26" value="A" /> A) Nominal</label>
+                <label><input type="radio" name="q26" value="B" /> B) Real</label>
+                <label><input type="radio" name="q26" value="C" /> C) Liability</label>
+                <label><input type="radio" name="q26" value="D" /> D) Personal</label>
+              </div>
+            </div>
+
+            <div class="question">
+              <p>27. Interest paid is treated as:</p>
+              <div class="options">
+                <label><input type="radio" name="q27" value="A" /> A) Income</label>
+                <label><input type="radio" name="q27" value="B" /> B) Asset</label>
+                <label><input type="radio" name="q27" value="C" /> C) Expense</label>
+                <label><input type="radio" name="q27" value="D" /> D) Liability</label>
+              </div>
+            </div>
+
+            <div class="question">
+              <p>28. Stamp expense is recorded under:</p>
+              <div class="options">
+                <label><input type="radio" name="q28" value="A" /> A) Real Account</label>
+                <label><input type="radio" name="q28" value="B" /> B) Personal Account</label>
+                <label><input type="radio" name="q28" value="C" /> C) Nominal Account</label>
+                <label><input type="radio" name="q28" value="D" /> D) None</label>
+              </div>
+            </div>
+
+            <div class="question">
+              <p>29. Capital account is a:</p>
+              <div class="options">
+                <label><input type="radio" name="q29" value="A" /> A) Personal Account</label>
+                <label><input type="radio" name="q29" value="B" /> B) Nominal Account</label>
+                <label><input type="radio" name="q29" value="C" /> C) Real Account</label>
+                <label><input type="radio" name="q29" value="D" /> D) Expense Account</label>
+              </div>
+            </div>
+
+            <div class="question">
+              <p>30. What is the definition of an Investment?</p>
+              <div class="options">
+                <label><input type="radio" name="q30" value="A" /> A) Expense made on purchase</label>
+                <label><input type="radio" name="q30" value="B" /> B) Liability for future</label>
+                <label><input type="radio" name="q30" value="C" /> C) Putting money in business for profit</label>
+                <label><input type="radio" name="q30" value="D" /> D) None of the above</label>
+              </div>
+            </div>
+
+            <div class="question">
+              <p>31. A liability is:</p>
+              <div class="options">
+                <label><input type="radio" name="q31" value="A" /> A) An expense</label>
+                <label><input type="radio" name="q31" value="B" /> B) An obligation payable in future</label>
+                <label><input type="radio" name="q31" value="C" /> C) A type of income</label>
+                <label><input type="radio" name="q31" value="D" /> D) None of the above</label>
+              </div>
+            </div>
+
+            <div class="question">
+              <p>32. Asset means:</p>
+              <div class="options">
+                <label><input type="radio" name="q32" value="A" /> A) Property owned by business</label>
+                <label><input type="radio" name="q32" value="B" /> B) Loan taken</label>
+                <label><input type="radio" name="q32" value="C" /> C) Profit earned</label>
+                <label><input type="radio" name="q32" value="D" /> D) Salary paid</label>
+              </div>
+            </div>
+
+            <div class="question">
+              <p>33. Fixed assets are:</p>
+              <div class="options">
+                <label><input type="radio" name="q33" value="A" /> A) Sold within 1 year</label>
+                <label><input type="radio" name="q33" value="B" /> B) Purchased for daily use</label>
+                <label><input type="radio" name="q33" value="C" /> C) Long-term tangible resources</label>
+                <label><input type="radio" name="q33" value="D" /> D) Intangible items</label>
+              </div>
+            </div>
+
+            <div class="question">
+              <p>34. Long-term liability includes:</p>
+              <div class="options">
+                <label><input type="radio" name="q34" value="A" /> A) Creditors</label>
+                <label><input type="radio" name="q34" value="B" /> B) Bank Loan (5 years)</label>
+                <label><input type="radio" name="q34" value="C" /> C) Salaries</label>
+                <label><input type="radio" name="q34" value="D" /> D) Income Received</label>
+              </div>
+            </div>
+
+            <div class="question">
+              <p>35. Drawings refer to:</p>
+              <div class="options">
+                <label><input type="radio" name="q35" value="A" /> A) Business Investment</label>
+                <label><input type="radio" name="q35" value="B" /> B) Owner withdrawing goods/cash</label>
+                <label><input type="radio" name="q35" value="C" /> C) Company Profit</label>
+                <label><input type="radio" name="q35" value="D" /> D) None</label>
+              </div>
+            </div>
+
+            <div class="question">
+              <p>36. What is Accounting?</p>
+              <div class="options">
+                <label><input type="radio" name="q36" value="A" /> A) Drawing charts</label>
+                <label><input type="radio" name="q36" value="B" /> B) Recording and classifying financial data</label>
+                <label><input type="radio" name="q36" value="C" /> C) Making bills</label>
+                <label><input type="radio" name="q36" value="D" /> D) Selling goods</label>
+              </div>
+            </div>
+
+            <div class="question">
+              <p>37. Nominal Accounts relate to:</p>
+              <div class="options">
+                <label><input type="radio" name="q37" value="A" /> A) People</label>
+                <label><input type="radio" name="q37" value="B" /> B) Assets</label>
+                <label><input type="radio" name="q37" value="C" /> C) Expenses and Incomes</label>
+                <label><input type="radio" name="q37" value="D" /> D) Liabilities</label>
+              </div>
+            </div>
+
+            <div class="question">
+              <p>38. Who is a Creditor?</p>
+              <div class="options">
+                <label><input type="radio" name="q38" value="A" /> A) Person who owes money to business</label>
+                <label><input type="radio" name="q38" value="B" /> B) Person to whom money is owed</label>
+                <label><input type="radio" name="q38" value="C" /> C) Owner</label>
+                <label><input type="radio" name="q38" value="D" /> D) Cashier</label>
+              </div>
+            </div>
+
+            <div class="question">
+              <p>39. Who is a Debtor?</p>
+              <div class="options">
+                <label><input type="radio" name="q39" value="A" /> A) Person to whom business owes money</label>
+                <label><input type="radio" name="q39" value="B" /> B) Business partner</label>
+                <label><input type="radio" name="q39" value="C" /> C) Person who owes money to business</label>
+                <label><input type="radio" name="q39" value="D" /> D) Manager</label>
+              </div>
+            </div>
+
+            <div class="question">
+              <p>40. Working Capital is:</p>
+              <div class="options">
+                <label><input type="radio" name="q40" value="A" /> A) Fixed Assets</label>
+                <label><input type="radio" name="q40" value="B" /> B) Current Assets - Current Liabilities</label>
+                <label><input type="radio" name="q40" value="C" /> C) Long-term Loan</label>
+                <label><input type="radio" name="q40" value="D" /> D) Owners Equity</label>
+              </div>
+            </div>
+
+            <div class="question">
+              <p>41. Fixed Capital is:</p>
+              <div class="options">
+                <label><input type="radio" name="q41" value="A" /> A) Short-term cash</label>
+                <label><input type="radio" name="q41" value="B" /> B) Capital used for day-to-day expenses</label>
+                <label><input type="radio" name="q41" value="C" /> C) Capital used to purchase fixed assets</label>
+                <label><input type="radio" name="q41" value="D" /> D) None of the above</label>
+              </div>
+            </div>
+
+            <div class="question">
+              <p>42. Which is not a Golden Rule of Accounting?</p>
+              <div class="options">
+                <label><input type="radio" name="q42" value="A" /> A) Debit the Receiver, Credit the Giver</label>
+                <label><input type="radio" name="q42" value="B" /> B) Debit what comes in, Credit what goes out</label>
+                <label><input type="radio" name="q42" value="C" /> C) Debit all incomes, Credit all expenses</label>
+                <label><input type="radio" name="q42" value="D" /> D) Debit all expenses, Credit all incomes</label>
+              </div>
+            </div>
+
+            <div class="question">
+              <p>43. An insolvent person is one who:</p>
+              <div class="options">
+                <label><input type="radio" name="q43" value="A" /> A) Has excess capital</label>
+                <label><input type="radio" name="q43" value="B" /> B) Cant pay his debts</label>
+                <label><input type="radio" name="q43" value="C" /> C) Is the owner</label>
+                <label><input type="radio" name="q43" value="D" /> D) Is the manager</label>
+              </div>
+            </div>
+
+
+
+
+
+
+          <button type="button" id="submit">Submit</button>
+        </form>
+      </section>
+
+      <section id="resultContainer" hidden>
+        <h2>Quiz Results</h2>
+        <div id="studentDetails"></div>
+        <p id="resultText"></p>
+        <button id="retryButton">Retry Quiz</button>
+      </section>
+    </div>
+
+    <nav id="questionNavigator">
+      <h3>Navigate</h3>
+      <div id="navButtons"></div>
+    </nav>
+  </main>
+</body>
+</html>
